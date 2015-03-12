@@ -2,7 +2,6 @@
 
 A multiple choice and text entry quiz can be represented in markdown in the following manner. A quiz block begins with the `???` delimiter.
 
-
 ```MD
 ???algebra-solution
 # Basic Algebra
@@ -43,7 +42,6 @@ Regular markdown is allowed so you may use headers and other markdown basically 
 Questions are simply 1. followed by `[ ]` for multiple choice.A question with only one `[ ]` is considered a text entry.
 
 
-```MD
 ???
 1. What is the meaning of the great gatsby?
 
