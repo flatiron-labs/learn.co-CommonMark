@@ -4,7 +4,7 @@ A multiple choice and text entry quiz can be represented in markdown in the foll
 
 
 ```MD
-???
+???algebra-solution
 # Basic Algebra
 
 ## Addition
@@ -24,7 +24,22 @@ A multiple choice and text entry quiz can be represented in markdown in the foll
 
 ## Multiplication
 
-1.
+1. What is 4*4?
+
+[ ] 16
+[ ] 12
+[ ] 44
+[ ] 8
+
+2. Describe the following operation in words `4*2+1`, mentioning which operators go first and what the answer is?
+
+[ ]
 
 ???
 ```
+
+Within the opening delimiter, you can specificy a file that contains the answer key in order (so `algebra-solution` would contain `211`
+
+Regular markdown is allowed so you may use headers and other markdown basically anywhere. 
+
+Questions are simply 1. followed by `[ ]` for multiple choice.A question with only one `[ ]` is considered a text entry.
