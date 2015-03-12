@@ -41,3 +41,11 @@ Within the opening delimiter, you can specificy a file that contains the answer 
 Regular markdown is allowed so you may use headers and other markdown basically anywhere. 
 
 Questions are simply 1. followed by `[ ]` for multiple choice.A question with only one `[ ]` is considered a text entry.
+
+
+```MD
+???
+1. What is the meaning of the great gatsby?
+
+???
+```
