@@ -3,7 +3,7 @@
 A multiple choice and text entry quiz can be represented in markdown in the following manner. A quiz block begins with the `???` delimiter.
 
 ```MD
-???essay
+???quiz
 # Basic Algebra
 
 ## Addition
@@ -30,7 +30,11 @@ A multiple choice and text entry quiz can be represented in markdown in the foll
 [ ] 44
 [ ] 8
 
-2. Describe the following operation in words `4*2+1`, mentioning which operators go first and what the answer is?
+???
+
+???essay
+
+1. Describe the following operation in words `4*2+1`, mentioning which operators go first and what the answer is?
 
 ???http://gist.github.com/23123143123.txt
 ```
