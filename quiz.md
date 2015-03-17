@@ -45,4 +45,4 @@ Questions with multiple answers have `[ ]` to indicate the choices. These will b
 
 Short answer questions (word match) will have `[-]` to indicate the input field.
 
-Essays, which can be included in the `??? .... ???` block with other questions, will have `[---]` to indicate the input field (textbox).
+Essays, which can be included in the `??? .... ???` block with other questions, will have `[---]` to indicate the input field (textbox). Essays are handled differently than the other question types. They are submitted for TA review; they do not have a corresponding answer in the `.answers` file.
