@@ -26,7 +26,7 @@ Learning stuff, blah blah
 
 ???
 
-???essay
+???
 
 1. Describe the following operation in words `4*2+1`, mentioning which operators go first and what the answer is?
 
@@ -34,3 +34,10 @@ Learning stuff, blah blah
 
 ???
 ```
+Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
+
+Questions with multiple answers have `[ ]` to indicate the choices. These will be parsed into check boxes.
+
+Short answer questions (word match) will have `[-]` to indicate the input field.
+
+Essays, which can be included in the `??? .... ???` block with other questions, will have `[---]` to indicate the input field (textbox).
