@@ -6,6 +6,8 @@ Learning stuff, blah blah
 
 ???
 
+# Arithmetic Quiz
+
 1. What is 1+1?
 
 ( ) 3
@@ -28,12 +30,15 @@ Learning stuff, blah blah
 
 ???
 
-1. Describe the following operation in words `4*2+1`, mentioning which operators go first and what the answer is?
+1. Write an essay about your childhood.
 
 [---]
 
 ???
 ```
+
+The first h1 inside of the `??? ... ???` block is the title of the quiz.
+
 Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
 
 Questions with multiple answers have `[ ]` to indicate the choices. These will be parsed into check boxes.
