@@ -28,7 +28,11 @@ Learning stuff, blah blah
 
 ???
 
+More readme, code, this, that, etc...
+
 ???
+
+# Personal Essay
 
 1. Write an essay about your childhood.
 
