@@ -41,7 +41,7 @@ More readme, code, this, that, etc...
 ???
 ```
 
-The first h1 inside of the `??? ... ???` block is the title of the quiz.
+The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
 
 Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
 
