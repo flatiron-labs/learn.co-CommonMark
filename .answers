@@ -1,3 +1,10 @@
+This file should include all of the answers to your quiz, in order that the questions appear. Nothing else should be in this file.
+Each answer should be delineated by a line break. 
+
+For questions that have more than one answer, each answer should be separated by a comma.
+
+Below are the answers for the quizzes in the quiz.md file.
+
 2
 9, 7
 hello
