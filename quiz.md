@@ -59,6 +59,8 @@ The reserved character below generates a short answer response textfield.
 
 ???
 
+## Quiz Specs
+
 The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
 
 Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
@@ -70,3 +72,7 @@ Short answer questions (word match) will have `[-]` to indicate the input field.
 Answer blocks `( )` `[-]` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
 
 Markdown will be parsed normally within quiz blocks, between the question and the answer block.
+
+## Quiz Answers
+
+Next, head over to the `.answers` file in this repo to see how answers should be handled.
