@@ -1,45 +1,63 @@
-```MD
-
 ## Readme Title
 
-Learning stuff, blah blah
+This is README content unassociated with any quiz.  Next comes an opening quiz block delimiter.
 
 ???
 
-# Arithmetic Quiz
+# This is a quiz title.  It is an H1 that immediately succeeds an opening quiz delimiter.
 
-1. What is 1+1?
+?: What is 1+1?  This is the first question.
+
+## Markdown is parsed normally between the question, and the answer block.
+
+```ruby
+  def hey_look_a_code_block
+    puts 'I'm interpreted by RedCarpet!'
+  end
+```
+
+__Next comes the answer block!__
+
+The parends below are reserved characters that indicate radio buttons.
 
 ( ) 3
 ( ) 2
 ( ) 11
 ( ) 1
 
-2. What do you multiply to get 24?
+?: This next question immediately succeeds the above answer block.
 
-[ ] 3*8
-[ ] 4*6
-[ ] 4*4
-[ ] 3*3
+#### The square brackets below are reserved characters that indicate checkboxes.
 
-3. What is the operation that returns the remainder of one number divided by another number?
+[ ] 3
+[ ] 4
+[ ] 9
+[ ] 7
+
+???
+
+## Here is an example of more README content, between quiz blocks!
+
+hipster ipsum banana peels hipster ipsum banana peels
+hipster ipsum banana peels hipster ipsum banana peels
+hipster ipsum banana peels hipster ipsum banana peels
+
+???
+
+# The start of a new quiz block means a new H1
+
+?: This is an example of a short answer question.  What does the below code block return?
+
+```ruby
+  def greeting
+    puts "hello"
+  end
+```
+The reserved character below generates a short answer response textfield.
 
 [-]
 
 ???
-
-More readme, code, this, that, etc...
-
-???
-
-# Personal Essay
-
-1. Write an essay about your childhood.
-
-[---]
-
-???
-```
 
 The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
 
@@ -49,4 +67,6 @@ Questions with multiple answers have `[ ]` to indicate the choices. These will b
 
 Short answer questions (word match) will have `[-]` to indicate the input field.
 
-Essays, which can be included in the `??? .... ???` block with other questions, will have `[---]` to indicate the input field (textbox). Essays are handled differently than the other question types. They are submitted for TA review; they do not have a corresponding answer in the `.answers` file.
+Answer blocks `( )` `[-]` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
+
+Markdown will be parsed normally within quiz blocks, between the question and the answer block.
