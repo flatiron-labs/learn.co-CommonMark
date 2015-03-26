@@ -7,6 +7,7 @@
 ```
 
 
+```
 In-app code exercises (REPL)
 
 Instructors can specify a REPL-based coding exercise in the following markdown format (borrowing heavily from gitbook.io):
@@ -69,3 +70,4 @@ assert(primaryCategory === "E/J" && secondaryCategory === "E|J");
 And here’s what the rendered output looks like.
 
 Another example for while loop: markdown | rendered output
+```
