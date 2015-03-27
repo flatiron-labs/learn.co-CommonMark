@@ -6,26 +6,18 @@ This is README content unassociated with any quiz.  Next comes an opening quiz b
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
 
-?: What is 1+1?  This is the first question.  There is a newline between it and the above title.
+?: What is 1+1?  This is the first question.  A newline is required between this and the title above.
 
-## Markdown is parsed normally between the question, and the answer block.
+## Standard markdown will be parsed as expected between the question, and the answer block.
 
-```ruby
-  def hey_look_a_code_block
-    puts 'I'm interpreted by RedCarpet!'
-  end
-```
-
-__Next comes the answer block!__
-
-The parends below are reserved characters that indicate radio buttons.
+__The parends below are reserved characters that indicate radio buttons.__
 
 ( ) 3
 ( ) 2
 ( ) 11
 ( ) 1
 
-?: This next question immediately succeeds the above answer block.
+?: A newline is required between this question, and the answer block above.
 
 #### The square brackets below are reserved characters that indicate checkboxes.
 
@@ -36,7 +28,7 @@ The parends below are reserved characters that indicate radio buttons.
 
 ???
 
-## Here is an example of more README content, between quiz blocks!
+## Now we are outside of the quiz block.  Here is an example of more README content, between quiz blocks!
 
 hipster ipsum banana peels hipster ipsum banana peels
 hipster ipsum banana peels hipster ipsum banana peels
@@ -44,7 +36,7 @@ hipster ipsum banana peels hipster ipsum banana peels
 
 ???
 
-# The start of a new quiz block means a new H1
+# The start of a new quiz block, which means a new H1, or quiz title.
 
 ?: This is an example of a short answer question.  What does the below code block return?
 
