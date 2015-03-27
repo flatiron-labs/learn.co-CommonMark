@@ -4,9 +4,9 @@ This is README content unassociated with any quiz.  Next comes an opening quiz b
 
 ???
 
-# This is a quiz title.  It is an H1 that immediately succeeds an opening quiz delimiter.
+# This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
 
-?: What is 1+1?  This is the first question.
+?: What is 1+1?  This is the first question.  There is a newline between it and the above title.
 
 ## Markdown is parsed normally between the question, and the answer block.
 
