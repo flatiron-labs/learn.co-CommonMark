@@ -48,6 +48,7 @@ hipster ipsum banana peels hipster ipsum banana peels
     puts "hello"
   end
 ```
+```
 The reserved character below generates a short answer response textfield.
 
 [-]
