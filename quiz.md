@@ -2,7 +2,7 @@
 
 This is README content unassociated with any quiz.  Next comes an opening quiz block delimiter.
 
-```
+```md
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
@@ -28,6 +28,7 @@ __The parends below are reserved characters that indicate radio buttons.__
 [ ] 7
 
 ???
+```
 
 ## Now we are outside of the quiz block.  Here is an example of more README content, between quiz blocks!
 
@@ -35,6 +36,7 @@ hipster ipsum banana peels hipster ipsum banana peels
 hipster ipsum banana peels hipster ipsum banana peels
 hipster ipsum banana peels hipster ipsum banana peels
 
+```md
 ???
 
 # The start of a new quiz block, which means a new H1, or quiz title.
@@ -73,7 +75,7 @@ Next, head over to the `.answers` file in this repo to see how answers should be
 
 ## HTML Conversion
 
-```
+```md
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
