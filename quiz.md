@@ -2,6 +2,7 @@
 
 This is README content unassociated with any quiz.  Next comes an opening quiz block delimiter.
 
+```md
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
@@ -50,6 +51,7 @@ The reserved character below generates a short answer response textfield.
 [-]
 
 ???
+```
 
 ## Quiz Specs
 
@@ -68,3 +70,42 @@ Markdown will be parsed normally within quiz blocks, between the question and th
 ## Quiz Answers
 
 Next, head over to the `.answers` file in this repo to see how answers should be handled.
+
+## HTML Conversion
+
+```md
+???
+
+# This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
+
+?: What is 1+1?  This is the first question.  A newline is required between this and the title above.
+
+## Standard markdown will be parsed as expected between the question, and the answer block.
+
+__The parends below are reserved characters that indicate radio buttons.__
+
+( ) 3
+( ) 2
+( ) 11
+( ) 1
+```
+
+Could be represented in HTML as:
+
+```html
+<form> <!-- Creates an interesting issue in terms of semantic HTML as the `???` delimiter should for sure start a <form> tag, or perhaps maybe only a <fieldset>, but how would we indicate the attributes of a form tag -->
+  <h1> <!-- though we could use a <legend> tag -->
+    This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
+  </h1>
+  
+  <fieldset>
+    <legend>
+      What is 1+1?  This is the first question.  A newline is required between this and the title above.
+      <h2>Standard markdown will be parsed as expected between the question, and the answer block.</h2>
+      <em>The parends below are reserved characters that indicate radio buttons.</em>
+    </legend>
+    
+    <input type="radio" name="question_1" id="question_1"> <label for="question_1">3</label>
+  </fieldset>
+  <!-- WIP -->
+</form>
