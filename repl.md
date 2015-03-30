@@ -14,7 +14,7 @@ Instructors can specify a REPL-based coding exercise in the following markdown f
 
 {% exercise %}
 
-### Exercise Header (optional)
+### Exercise Header
 
 <Instruction Text>
 
