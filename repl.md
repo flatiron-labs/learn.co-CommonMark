@@ -38,6 +38,9 @@ Instructors can specify a REPL-based coding exercise in the following markdown f
 Example markdown:
 
 {% exercise %}
+
+### Basic JS Repl
+
 Fill up the 2 conditions so that `primaryCategory` equals `"E/J"` only if name equals `"John"` and country is `"England"`, and so that `secondaryCategory` equals `"E|J"` only if name equals `"John"` or country is `"England"`
 {% initial %}
 var name = "John";
