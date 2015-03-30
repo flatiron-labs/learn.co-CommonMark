@@ -2,7 +2,7 @@
 
 This is README content unassociated with any quiz.  Next comes an opening quiz block delimiter.
 
-```md
+```
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
@@ -73,7 +73,7 @@ Next, head over to the `.answers` file in this repo to see how answers should be
 
 ## HTML Conversion
 
-```md
+```
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
@@ -109,3 +109,4 @@ Could be represented in HTML as:
   </fieldset>
   <!-- WIP -->
 </form>
+```
