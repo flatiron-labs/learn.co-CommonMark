@@ -1,10 +1,18 @@
-This file should include all of the answers to your quiz, in order that the questions appear. Nothing else should be in this file.
-Each answer should be delineated by a line break. 
+This file should include the answers to all quizzes in a readme.
 
-For questions that have more than one answer, each answer should be separated by a comma.
+For multiple choice and multiple select:
+The order number of each correct answer in the order that the questions appear in the quiz. Not the index.
+For multiple select questions, the order number for each answer should be separated by commas.
+
+For short-answer, or fill-in questions, the answer should be included in quotes "".
+
+Each answer should be delineated by a line break.
+
+Nothing else should be in this file except the answers.
 
 Below are the answers for the quizzes in the quiz.md file.
 
 2
-9, 7
-hello
+2
+3, 4
+"hello"
