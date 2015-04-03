@@ -18,6 +18,33 @@ __The parends below are reserved characters that indicate radio buttons.__
 ( ) 11
 ( ) 1
 
+?: What is 1+1?  This is how you can include code blocks as a choices.
+
+( ) 
+```ruby
+  def three
+    "3"
+  end
+```
+( )
+```ruby
+  def two
+    "2"
+  end
+```
+( )
+```ruby
+  def one
+    "1"
+  end
+```
+( )
+```ruby
+  def eleven
+    "11"
+  end
+```
+
 ?: A newline is required between this question, and the answer block above.
 
 #### The square brackets below are reserved characters that indicate checkboxes.
