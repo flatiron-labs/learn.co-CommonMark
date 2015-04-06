@@ -1,0 +1,13 @@
+~~~js
+var taylorArray = []; 
+var i = 0;
+
+while (i < 5) { 
+  taylorArray.push("taylors gonna tay");
+  i++;
+}
+~~~
+var assert = chai.assert;
+
+assert.equal(taylorArray, ["taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay"]);
+~~~
