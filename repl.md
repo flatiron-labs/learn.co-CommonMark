@@ -1,47 +1,37 @@
-```md
+## This is a Readme with a Javascript Repl
 
-# Intro to JS Loops
+##### Here is some readme content.
 
-JS Loops are awesome.
+Schlitz brunch photo booth lumbersexual cliche banjo Intelligentsia street art, bicycle rights salvia four loko vegan raw denim YOLO gluten-free. Echo Park 8-bit quinoa, raw denim next level vinyl Shoreditch authentic chambray farm-to-table craft beer XOXO.
 
+## The three consecutive percent signs below indicate that start of a Repl block.
 
 %%%
 
-### Another JS REPL
+### This is the Quiz Title - It is required.
 
-Write a `while` loop that fills the given array `taylorArray` with five strings, each containing "taylors gonna tay".
+Here, you can write any necessary directions for the repl.  It will be parsed as markdown, and even accepts codeblocks!
+
+Write a `while` loop that fills the given array `tayArray` with five strings, each containing "taylors gonna tay".
 
 Here's an example of iteration in JS:
 
 ```js
 for(i=0; i<10; i++;){
-  
+  // code here
 }
 ```
 
 Now write your own!
 
-~~~js
+The space delineated by the tildes below is used to set any initial values for the repl.  Append the name of the language you want to use, to the opening trio of tildes.
+
+~~~javascript
+
+var tayArray = [];
 
 ~~~
+
 %%%
 
-
-.repl
-
-~~~js
-var taylorArray = []; 
-var i = 0;
-
-while (i < 5) { 
-  taylorArray.push("taylors gonna tay");
-  i++;
-}
-~~~
-var assert = chai.assert;
-
-assert.equal(taylorArray, ["taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay"]);
-~~~
-
-
-```
+This is outside of the repl block.  Please check out the .repl file to see how to write a solution and validation.
