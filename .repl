@@ -1,14 +1,13 @@
-~~~js
+~~~javascript
 
-var taylorArray = []; 
+var tayArray = []; 
 var i = 0;
 
 while (i < 5) { 
-  taylorArray.push("taylors gonna tay");
+  tayArray.push("taylors gonna tay");
   i++;
 }
 ~~~
 
-assert.equal(taylorArray, ["taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay"]);
+assert.deepEqual(tayArray, ["taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay"]);
 ~~~
-
