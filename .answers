@@ -4,7 +4,7 @@ For multiple choice and multiple select:
 The order number of each correct answer in the order that the questions appear in the quiz. Not the index.
 For multiple select questions, the order number for each answer should be separated by commas.
 
-For short-answer, or fill-in questions, the answer should be included in quotes "".
+For short-answer, or fill-in questions, input the answer exactly as you would like it to appear.
 
 Each answer should be delineated by a line break.
 
@@ -15,4 +15,4 @@ Below are the answers for the quizzes in the quiz.md file.
 2
 2
 3, 4
-"hello"
+hello
