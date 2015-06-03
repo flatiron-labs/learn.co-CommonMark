@@ -77,7 +77,8 @@ hipster ipsum banana peels hipster ipsum banana peels
 ```
 
 ```
-The reserved character below generates a short answer response textfield.  (DEPRECATED - DO NOT USE)
+(DEPRECATED - DO NOT USE)
+The reserved character below generates a short answer response textfield.
 
 [-]
 
