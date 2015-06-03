@@ -11,3 +11,11 @@ while (i < 5) {
 
 assert.deepEqual(tayArray, ["taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay","taylors gonna tay"]);
 ~~~
+
+~~~ruby
+
+"some solution"
+~~~
+
+"some assertion"
+~~~
