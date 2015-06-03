@@ -35,3 +35,23 @@ var tayArray = [];
 %%%
 
 This is outside of the repl block.  Please check out the .repl file to see how to write a solution and validation.
+
+##### Here is some more readme content.
+
+Schlitz crunch photo booth lumbersexual cliche banjo Intelligentsia street art, bicycle rights salvia four loko vegan raw denim YOLO gluten-free. Echo Park 8-bit quinoa, raw denim next level vinyl Shoreditch authentic chambray farm-to-table craft beer XOXO.
+
+%%%
+
+### Ruby Repl
+
+Here, you can write any necessary directions for the repl.  It will be parsed as markdown, and even accepts codeblocks!
+
+Now write your own!
+
+~~~ruby
+
+# Code your solution here
+
+~~~
+
+%%%
