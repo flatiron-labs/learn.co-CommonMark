@@ -57,27 +57,6 @@ __The parends below are reserved characters that indicate radio buttons.__
 ???
 ```
 
-## Now we are outside of the quiz block.  Here is an example of more README content, between quiz blocks!
-
-hipster ipsum banana peels hipster ipsum banana peels
-hipster ipsum banana peels hipster ipsum banana peels
-hipster ipsum banana peels hipster ipsum banana peels
-
-```md
-???
-
-# The start of a new quiz block, which means a new H1, or quiz title.
-
-?: This is an example of a short answer question.  What does the below code block return?
-
-```ruby
-  def greeting
-    puts "hello"
-  end
-```
-
-???
-
 ## Quiz Specs
 
 The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
