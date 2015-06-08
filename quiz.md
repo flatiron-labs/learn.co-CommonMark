@@ -76,10 +76,7 @@ hipster ipsum banana peels hipster ipsum banana peels
   end
 ```
 
-```
-
 ???
-```
 
 ## Quiz Specs
 
