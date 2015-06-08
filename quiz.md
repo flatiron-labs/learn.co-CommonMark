@@ -77,10 +77,6 @@ hipster ipsum banana peels hipster ipsum banana peels
 ```
 
 ```
-(DEPRECATED - DO NOT USE)
-The reserved character below generates a short answer response textfield.
-
-[-]
 
 ???
 ```
@@ -93,9 +89,7 @@ Questions with one answer have `( )` to indicate the choices. These will be pars
 
 Questions with multiple answers have `[ ]` to indicate the choices. These will be parsed into check boxes.
 
-Short answer questions (word match) will have `[-]` to indicate the input field.
-
-Answer blocks `( )` `[-]` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
+Answer blocks `( )` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
 
 Markdown will be parsed normally within quiz blocks, between the question and the answer block.
 
