@@ -20,13 +20,13 @@ __The parends below are reserved characters that indicate radio buttons.__
 
 ?: What is 1+1?  This is how you can include code blocks as a choices.
 
-( ) 
+( )
 ```ruby
   def three
     "3"
   end
 ```
-( )
+( )<-
 ```ruby
   def two
     "2"
@@ -45,12 +45,12 @@ __The parends below are reserved characters that indicate radio buttons.__
   end
 ```
 
-?: A newline is required between this question, and the answer block above.
+?: A newline is required between this question, and the answer block above.  Select numbers 3 and 4.
 
 #### The square brackets below are reserved characters that indicate checkboxes.
 
-[ ] 3
-[ ] 4
+[ ] 3<-
+[ ] 4<-
 [ ] 9
 [ ] 7
 
