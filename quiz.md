@@ -14,7 +14,7 @@ This is README content unassociated with any quiz.  Next comes an opening quiz b
 __The parends below are reserved characters that indicate radio buttons.__
 
 ( ) 3
-( ) 2
+(X) 2
 ( ) 11
 ( ) 1
 
@@ -26,7 +26,7 @@ __The parends below are reserved characters that indicate radio buttons.__
     "3"
   end
 ```
-( )<-
+(X)
 ```ruby
   def two
     "2"
@@ -49,8 +49,8 @@ __The parends below are reserved characters that indicate radio buttons.__
 
 #### The square brackets below are reserved characters that indicate checkboxes.
 
-[ ] 3<-
-[ ] 4<-
+[X] 3
+[X] 4
 [ ] 9
 [ ] 7
 
@@ -71,7 +71,7 @@ Markdown will be parsed normally within quiz blocks, between the question and th
 
 ## Quiz Answers
 
-Next, head over to the `.answers` file in this repo to see how answers should be handled.
+Answers are specified inline using an upcase `X` character.
 
 ## HTML Conversion
 
