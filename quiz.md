@@ -1,15 +1,32 @@
-Readme Title
+# Quiz Specs
 
-This is README content unassociated with any quiz.  Next comes an opening quiz block delimiter.
+The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
 
-```md
+Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
+
+Questions with multiple answers have `[ ]` to indicate the choices. These will be parsed into check boxes.
+
+Answer blocks `( )` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
+
+Markdown will be parsed normally within quiz blocks, between the question and the answer block.
+
+# Quiz Answers
+
+Answers are specified inline using an upcase `X` character.
+
+# Sample Quiz
+
+## Readme Title
+
+This is README content that exists outside of the quiz block. Next comes an opening quiz block delimiter.
+
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
 
 ?: What is 1+1?  This is the first question.  A newline is required between this and the title above.
 
-## Standard markdown will be parsed as expected between the question, and the answer block.
+Standard markdown will be parsed as expected between the question, and the answer block.
 
 __The parends below are reserved characters that indicate radio buttons.__
 
@@ -55,62 +72,3 @@ __The parends below are reserved characters that indicate radio buttons.__
 [ ] 7
 
 ???
-
-
-## Quiz Specs
-
-The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
-
-Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
-
-Questions with multiple answers have `[ ]` to indicate the choices. These will be parsed into check boxes.
-
-Answer blocks `( )` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
-
-Markdown will be parsed normally within quiz blocks, between the question and the answer block.
-
-## Quiz Answers
-
-Answers are specified inline using an upcase `X` character.
-
-## HTML Conversion
-
-
-???
-
-# This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
-
-?: What is 1+1?  This is the first question.  A newline is required between this and the title above.
-
-## Standard markdown will be parsed as expected between the question, and the answer block.
-
-__The parends below are reserved characters that indicate radio buttons.__
-
-( ) 3
-( ) 2
-( ) 11
-( ) 1
-
-???
-```
-
-Could be represented in HTML as:
-
-```html
-<form> <!-- Creates an interesting issue in terms of semantic HTML as the `???` delimiter should for sure start a <form> tag, or perhaps maybe only a <fieldset>, but how would we indicate the attributes of a form tag -->
-  <h1> <!-- though we could use a <legend> tag -->
-    This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
-  </h1>
-  
-  <fieldset>
-    <legend>
-      What is 1+1?  This is the first question.  A newline is required between this and the title above.
-      <h2>Standard markdown will be parsed as expected between the question, and the answer block.</h2>
-      <em>The parends below are reserved characters that indicate radio buttons.</em>
-    </legend>
-    
-    <input type="radio" name="question_1" id="question_1"> <label for="question_1">3</label>
-  </fieldset>
-  <!-- WIP -->
-</form>
-```
