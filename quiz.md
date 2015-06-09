@@ -1,6 +1,10 @@
 # Quiz Specs
 
-The first h1 inside of the `??? ... ???` block is the title of the quiz. This is required.
+Quiz blocks begin and end with a triple question mark reserved character `???`.
+
+The first h1 inside of the `??? ... ???` block is the title of the quiz. The title must have a newline above and below it.  THIS IS REQUIRED!
+
+Questions are delineated by `?:` followed by the question text.
 
 Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons.
 
@@ -8,7 +12,7 @@ Questions with multiple answers have `[ ]` to indicate the choices. These will b
 
 Answer blocks `( )` `[ ]` also delimit the end of the a question.  The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`.
 
-Markdown will be parsed normally within quiz blocks, between the question and the answer block.
+Markdown will be parsed normally within quiz blocks, between the question and the answer choices.
 
 # Quiz Answers
 
