@@ -1,4 +1,4 @@
-## Readme Title
+Readme Title
 
 This is README content unassociated with any quiz.  Next comes an opening quiz block delimiter.
 
@@ -55,7 +55,7 @@ __The parends below are reserved characters that indicate radio buttons.__
 [ ] 7
 
 ???
-```
+
 
 ## Quiz Specs
 
@@ -75,7 +75,7 @@ Answers are specified inline using an upcase `X` character.
 
 ## HTML Conversion
 
-```md
+
 ???
 
 # This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
