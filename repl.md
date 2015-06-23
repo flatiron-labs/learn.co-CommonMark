@@ -21,6 +21,8 @@ The `assert` and `expect` methods are both supported.  `should` is NOT supported
 
 ~~~validation
 
+// Validation go in this block - VALIDATIONS MAY CONTAIN DOUBLE QUOTES ONLY -- NO SINGLE QUOTES!!
+
 assert.equal(response.length, 3);
 expect(response).to.be.a("array");
 
