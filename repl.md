@@ -24,7 +24,7 @@ The repl container is divided into three sections as below - initial values, sol
 
 // Validation goes here
 
-~~~
+~~~[closing tildes]
 ```
 
 **Starting section:**  
@@ -134,7 +134,7 @@ assert_contains("Taylor Swift", "Taylor");
 assert_contains([1984, 2015], 1984);
 ```
 
-## Examples:
+## Example Repls:
 
 %%%
 
