@@ -48,27 +48,14 @@ Ruby repls use their own custom validations, as listed below:
 
 #### assert_equal(response, some_validation)
 
-Checks `response` against value of `some_validation`.
+Checks `response` against value of `some_validation`. **Note:** use `assert_equal(response, true)` if you want to validate whether a solution returns the actual value `true`. Use `assert_true(response)` to evaluate truthiness.
 
 ```ruby
 # examples
-assert_equal(response, 1);
-assert_equal(response, ["Ruby", "Javascript", "SQL"]);
-assert_equal(response,
-  {
-    "Jon Snow": {
-      name: "Jon",
-      email: "jon_snow@thewall.we",
-      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"]
-    },
-
-    "Freddy": {
-      name: "Freddy",
-      email: "freddy@mercury.com",
-      favorite_icecream_flavors: ["cookie dough", "mint chip"]
-    }
-  }
-);
+assert_equal(response, some_validation)
+assert_equal(response, 1) # response = 1
+assert_equal(response, ["Ruby", "Javascript", "SQL"]) # response = ["Ruby", "Javascript", "SQL"]
+assert_equal(response, {"Jon Snow": {name: "Jon", email: "jon_snow@thewall.we", favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"]}) # response = {"Jon Snow": {name: "Jon", email: "jon_snow@thewall.we", favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"]}
 ```
 
 #### assert_type(response, Type)
@@ -77,9 +64,10 @@ Checks [Ruby type](http://ruby-doc.org/core-1.8.7/Object.html#method-i-type) of 
 
 ```ruby
 # examples
-assert_type("Taylor", String);
-assert_type([1, 2, 3], Array);
-assert_type({color: "blue"}, Hash);
+assert_type(response, Type)
+assert_type(response, String) # response = "Taylor"
+assert_type(response, Array)  # response = [1,2,3]
+assert_type(response, Hash)   # response = {color: "blue"}
 ```
 
 #### assert_length(response, some_length)
@@ -88,40 +76,43 @@ Checks `response.length` against `some_length`, where `some_length` is an intege
 
 ```ruby
 # examples
-assert_length(["one", "two", "three"], 3);
-assert_length("a-string-with-exactly-forty-two-characters", 42);
+assert_length(response, some_length)
+assert_length(response, 3)  # response = ["one", "two", "three"]
+assert_length(response, 42) # "a-string-with-exactly-forty-two-characters"
 ```
 
 #### assert_match(response, some_array)
 
-Checks equality of `response` against `some_array`, where `response` is an array (similar to [Array#==](http://ruby-doc.org/core-2.2.0/Array.html#method-i-3D-3D)).
+Checks `response` and `some_array` are the same length AND all elements of `response` are included in `some_array`, where `response` is an array (similar to [RSpec::Matchers#match_array](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec/Matchers:match_array)).
 
 ```ruby
 # examples
-assert_match([1,2,3], [1, 2, 3]);
-assert_match(response, ["Daria", "Jane", "Trent", "Quinn"]);
+assert_match(response, some_array)
+assert_match(response, [1, 2, 3]) # response = [1,2,3]
+assert_match(response, ["Daria", "Jane", "Trent", "Quinn"]) # response = ["Daria", "Jane", "Trent", "Quinn"]
 ```
 
 #### assert_true(response)
 
-Checks boolean value of `response` against `true`.
+Checks truthiness of `response`. **Note:** use `assert_equal(response, true)` if you want to validate whether a solution returns the actual value `true`. Use `assert_true(response)` to evaluate truthiness.
 
 ```ruby
 # examples
-assert_false(true);
-assert_false(!nil);
-assert_false(1 == 1);
+assert_true(response)
+assert_true(response) # response = "Colbert"
+assert_true(response) # response = 1776
+assert_true(response) # response = ["U", "S", "A"]
 ```
 
 #### assert_false(response)
 
-Checks boolean value of `response` against `false`.
+Checks falsiness of `response`.
 
 ```ruby
 # examples
-assert_false(false);
-assert_false(!!nil);
-assert_false(1 == 2);
+assert_false(response)
+assert_false(response) # response = nil
+assert_false(response) # response = false
 ```
 
 #### assert_contains(response, some_element)
@@ -130,8 +121,9 @@ Checks that `response` contains `some_element` (similar to [Array#include?](http
 
 ```ruby
 # examples
-assert_contains("Taylor Swift", "Taylor");
-assert_contains([1984, 2015], 1984);
+assert_contains(response, some_element)
+assert_contains(response, "Taylor") # response = "Taylor Swift"
+assert_contains(response, 1989)     # response = [1989, 2015]
 ```
 
 ## Example Repls:
