@@ -78,7 +78,7 @@ Checks `response.length` against `some_length`, where `some_length` is an intege
 # examples
 assert_length(response, some_length)
 assert_length(response, 3)  # response = ["one", "two", "three"]
-assert_length(response, 42) # "a-string-with-exactly-forty-two-characters"
+assert_length(response, 42) # response = "a-string-with-exactly-forty-two-characters"
 ```
 
 #### assert_match(response, some_array)
@@ -88,8 +88,8 @@ Checks `response` and `some_array` are the same length AND all elements of `resp
 ```ruby
 # examples
 assert_match(response, some_array)
-assert_match(response, [1, 2, 3]) # response = [1,2,3]
-assert_match(response, ["Daria", "Jane", "Trent", "Quinn"]) # response = ["Daria", "Jane", "Trent", "Quinn"]
+assert_match(response, [1, 2, 3]) # response = [1,3,2]
+assert_match(response, ["Daria", "Jane", "Trent", "Quinn"]) # response = ["Jane", "Trent", "Daria", "Quinn"]
 ```
 
 #### assert_true(response)
