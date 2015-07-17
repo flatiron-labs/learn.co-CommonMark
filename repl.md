@@ -48,7 +48,8 @@ Ruby repls use their own custom validations, as listed below:
 
 #### assert_equal(response, some_validation)
 
-Checks `response` against value of `some_validation`. **Note:** use `assert_equal(response, true)` if you want to validate whether a solution returns the actual value `true`. Use `assert_true(response)` to evaluate truthiness.
+Checks `response` against value of `some_validation`. Use single line syntax for hashes. Hashes written out in multi-line syntax will not be parsed correctly. **Note:** use `assert_equal(response, true)` if you want to validate whether a solution returns the actual value `true`. Use `assert_true(response)` to evaluate truthiness.
+
 
 ```ruby
 # examples
