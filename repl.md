@@ -178,7 +178,7 @@ reverse("12345")
 
 ~~~validation
 
-assert_equal(response,"54321");
+assert_equal(response,"54321")
 
 ~~~
 
