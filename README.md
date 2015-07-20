@@ -4,6 +4,9 @@ Specification and samples for learn.co flavored CommonMark
 
 We use learn.co-CommonMark when writing our [quizzes](#quiz-specs) and [code challenges](#code-challenge-spec).
 
+For sample quizzes, refer to [`quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/quiz.md).  
+For sample code challenges, refer to [`repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/repl.md).
+
 ## Quiz Specs
 
 All quizzes should be built right inside your README.md files. Quizzes are parsed by our [quiz parser](https://github.com/flatiron-labs/ironboard/blob/1801b23c562cb7bd8ef9e13d6df97f19cac4aecb/lib/inline_quiz_parser.rb) as well as by [Redcarpet](https://github.com/vmg/redcarpet), a markdown parser.
@@ -57,7 +60,7 @@ Any standard markdown included as part of your question or answer choices will b
 def cool_method
   "remember: no spaces between code block and answer choices."
 end
-````
+```'
 ( ) no
 ```
 
@@ -123,7 +126,7 @@ The final tilde demarcated section `~~~validation` is for validations.
 - Javascript validations can be written in the style of the Chai.js assertion library - http://chaijs.com/guide/styles/ The `assert` and `expect` methods are both supported. `should` is NOT supported.
 - Ruby validations have their own custom supported methods ([see below](#ruby-repl-validations))
 - Use double quotation marks only. Single quotes will not be parsed correctly.  
-- Remove any trailing whitespace. Trailing whitespace will not be parsed correctly.  
+- **Remove any trailing whitespace.** Trailing whitespace will not be parsed correctly.  
 
 Don't forget to close the repl container with a final `~~~` below your validation section.
 
