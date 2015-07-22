@@ -87,7 +87,7 @@ For sample quizzes, refer to [`quiz.md`](https://github.com/flatiron-labs/learn.
 
 ## Code Challenge Spec
 
-Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and they rely on the [repl.it API](https://repl.it/api).
+Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and they rely on the [repl.it API](https://github.com/replit/ReplitClient.js).
 
 Code challenge blocks begin with the triple percentage sign mark reserved character `%%%`.
 
