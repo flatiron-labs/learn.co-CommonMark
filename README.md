@@ -4,8 +4,8 @@ Specification and samples for learn.co flavored CommonMark
 
 We use learn.co-CommonMark when writing our [quizzes](#quiz-specs) and [code challenges](#code-challenge-spec).
 
-For sample quizzes, refer to [`quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/quiz.md).  
-For sample code challenges, refer to [`repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/repl.md).
+For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_quiz.md).  
+For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
 
 ## Quiz Specs
 
@@ -83,7 +83,7 @@ This text down here is going to to break the quiz.
 ( ) womp womp
 ```
 
-For sample quizzes, refer to [`quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/quiz.md).  
+For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_quiz.md).  
 
 ## Code Challenge Spec
 
@@ -214,4 +214,4 @@ assert_contains(response, "Taylor") # response = "Taylor Swift"
 assert_contains(response, 1989)     # response = [1989, 2015]
 ```
 
-For sample code challenges, refer to [`repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/repl.md).
+For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
