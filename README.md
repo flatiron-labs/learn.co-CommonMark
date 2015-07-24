@@ -215,3 +215,15 @@ assert_contains(response, 1989)     # response = [1989, 2015]
 ```
 
 For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
+
+#### assert_output(response, some_validation)
+
+Checks stdout of student's response against `some_validation`. This assertion allows you to test the output of a student's response, not the return value. Use this assertion to test methods like [`puts`](http://ruby-doc.org/core-2.2.2/Kernel.html#method-i-puts), which outputs a string, but returns `nil`.
+
+```ruby
+# examples
+assert_output(response, expected_string)
+assert_output(response, "ruby\nruby\nruby\n")      # response = `3.times { puts "ruby" }`
+assert_output(response, "very creative example\n") # response = `puts "very creative example"`
+assert_output(response, "multi\nline\nstring\n")   # response = `puts "multi"; puts "line"; puts "string"`
+```
