@@ -89,7 +89,7 @@ For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs
 
 ## Code Challenge Spec
 
-Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and currently support two languages: Javascript and Ruby. Javascript repls are evaluated using the [Chai assertion library](http://chaijs.com/), and Ruby repls are evaluated using the [repl.it API](https://github.com/replit/ReplitClient.js).
+Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and currently support two languages: Javascript and Ruby. Javascript repls are evaluated using the [Chai assertion library](http://chaijs.com/), and Ruby repls are evaluated using our own [custom testing library](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/ruby_repl_testing_library.rb), which we then pass to the [repl.it API](https://github.com/replit/ReplitClient.js) along with the student's response and the instructor's validation(s) for evaluation.
 
 Code challenge blocks begin with the triple percentage sign mark reserved character `%%%`.
 
@@ -134,7 +134,7 @@ Don't forget to close the repl container with a final `~~~` below your validatio
 
 ### Ruby Code Challenge Validations
 
-Ruby code challenge validations use their own custom assertion methods, as listed below:
+Ruby code challenge validations use their own custom assertion methods, as listed below. Source code for these methods is viewable [here](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/ruby_repl_testing_library.rb).
 
 #### assert_equal(response, some_validation)
 
