@@ -1,6 +1,6 @@
 # learn.co-CommonMark
 
-Specification and samples for learn.co flavored CommonMark
+Specification and samples for learn.co flavored [CommonMark](https://github.com/jgm/CommonMark)
 
 We use learn.co-CommonMark when writing our [quizzes](#quiz-specs) and [code challenges](#code-challenge-spec).
 
@@ -30,11 +30,13 @@ Questions are delineated by `?: ` followed by the question text.
 
 ### Answer Choices
 
-Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons. **Do not include any newlines between your answer choices.**
+Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons. 
 
 Questions with multiple answers have `[ ]` to indicate the choices. These will be parsed into check boxes.
 
 Answers are specified inline using an upcase X character inside parentheses: `(X)`.
+
+**Do not include any newlines between your answer choices.**
 
 ```
 ?: Can I select only one answer for this question?
@@ -64,7 +66,7 @@ end
 ( ) no
 ```
 
-**Note:** The final answer choice delimits the end of a question. The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`, so do not include any additional material after your answer block.
+**Note:** The final answer choice delimits the end of a question. The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`, so do not include any additional material after your answer block. See the example below for further clarification.
 
 ```
 ?: Example question: What is 1+1?
@@ -214,8 +216,6 @@ assert_contains(response, "Taylor") # response = "Taylor Swift"
 assert_contains(response, 1989)     # response = [1989, 2015]
 ```
 
-For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
-
 #### assert_output(response, some_validation)
 
 Checks stdout of student's response against `some_validation`. This assertion allows you to test the output of a student's response, not the return value. Use this assertion to test methods like [`puts`](http://ruby-doc.org/core-2.2.2/Kernel.html#method-i-puts), which outputs a string, but returns `nil`.
@@ -227,3 +227,5 @@ assert_output(response, "ruby\nruby\nruby\n")      # response = `3.times { puts 
 assert_output(response, "very creative example\n") # response = `puts "very creative example"`
 assert_output(response, "multi\nline\nstring\n")   # response = `puts "multi"; puts "line"; puts "string"`
 ```
+
+For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
