@@ -93,11 +93,11 @@ class Fis
       end
     end
 
-    def evaluate_response(student_response)
-      if capture_stdout {student_response}.empty?
-          student_response
+    def evaluate_response(&student_response)
+      if capture_stdout { yield }.empty?
+          yield
       else
-         capture_stdout {student_response}
+         capture_stdout { yield }
       end
     end
 
