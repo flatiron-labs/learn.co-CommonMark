@@ -1,5 +1,7 @@
 ## Example Code Challenges:
 
+Below are some inspiring example code challenges you can use as a reference when writing your own.
+
 %%%
 
 ### Javascript Repl
@@ -16,7 +18,9 @@ Directions: Write an array containing three strings, each saying "taylors gonna 
 
 ~~~validation
 
-// Validations go in this block - VALIDATIONS MAY CONTAIN DOUBLE QUOTES ONLY -- NO SINGLE QUOTES!!
+// Validations go in this block
+// Validations should contain double quotes only. Single quotes will break the repl.
+// You can include multiple validations in Javascript repls.
 
 assert.equal(response.length, 3);
 expect(response).to.be.a("array");
@@ -25,7 +29,7 @@ expect(response).to.be.a("array");
 
 %%%
 
-### Some more markdown here, in between repls
+### You can add some more markdown here, in between repls
 
 and so on and so on
 
@@ -49,8 +53,9 @@ reverse("12345")
 
 ~~~validation
 
-// Be sure to use custom Ruby repl syntax, not chai syntax.
-// Do not end your Ruby repl validation with a semicolon.
+# Be sure to use custom Ruby repl syntax, not chai syntax.
+# Do not end your Ruby repl validation with a semicolon.
+# Ruby repls currently support single validations only. Do not include more than one validation in your Ruby repl.
 
 assert_equal(response, "54321")
 
