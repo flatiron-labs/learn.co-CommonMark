@@ -89,7 +89,7 @@ For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs
 
 ## Code Challenge Spec
 
-Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and they rely on the [repl.it API](https://github.com/replit/ReplitClient.js).
+Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and currently support two languages: Javascript and Ruby. Javascript repls are evaluated using the [Chai assertion library](http://chaijs.com/), and Ruby repls are evaluated using the [repl.it API](https://github.com/replit/ReplitClient.js).
 
 Code challenge blocks begin with the triple percentage sign mark reserved character `%%%`.
 
@@ -125,8 +125,8 @@ The second tilde demarcated section `~~~solution` is for the solution. It contai
 
 **Validation section:**  
 The final tilde demarcated section `~~~validation` is for validations.  
-- Javascript validations can be written in the style of the Chai.js assertion library - http://chaijs.com/guide/styles/ The `assert` and `expect` methods are both supported. `should` is NOT supported.
-- Ruby validations have their own custom supported methods ([see below](#ruby-repl-validations))
+- Javascript validations can be written using the Chai.js assertion library - http://chaijs.com/guide/styles/. The `assert` and `expect` methods are both supported. `should` is NOT supported.
+- Ruby validations have their own custom assertion methods ([see below](#ruby-repl-validations)).
 - Use double quotation marks only. Single quotes will not be parsed correctly.  
 - **Remove any trailing whitespace.** Trailing whitespace will not be parsed correctly.  
 
@@ -134,7 +134,7 @@ Don't forget to close the repl container with a final `~~~` below your validatio
 
 ### Ruby Code Challenge Validations
 
-Ruby code challenges use their own custom validations, as listed below:
+Ruby code challenge validations use their own custom assertion methods, as listed below:
 
 #### assert_equal(response, some_validation)
 
