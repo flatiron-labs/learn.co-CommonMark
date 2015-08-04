@@ -1,6 +1,8 @@
-# Ruby repls are evaluated using the testing library below. 
-# To do so, we pass this testing library along with the student's response 
+# Ruby repls are evaluated using the testing library below.
+# To do so, we pass this testing library along with the student's response
 # and the instructor's validation(s) to the repl.it API for evaluation.
+
+require 'stringio'
 
 class Fis
   class Test
