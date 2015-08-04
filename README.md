@@ -91,11 +91,11 @@ For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs
 
 Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and currently support two languages: Javascript and Ruby. Javascript repls are evaluated using the [Chai assertion library](http://chaijs.com/), and Ruby repls are evaluated using our own [custom testing library](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/ruby_repl_testing_library.rb), which we then pass to the [repl.it API](https://github.com/replit/ReplitClient.js) along with the student's response and the instructor's validation(s) for evaluation.
 
-Code challenge blocks begin with the triple percentage sign mark reserved character `%%%`.
+Code challenge blocks begin with the triple-percentage-sign reserved character `%%%`.
 
 The first h1 inside of `%%%...%%%` is the title of the challenge.
 - The title must have a newline above and below it.
-- This is required.
+- **This is required.**
 
 Below the title, write any directions for the challenge. The text will be parsed as markdown and can accept codeblocks. Again, leave a newline space above and below the directions text.
 
@@ -112,23 +112,23 @@ The repl container is divided into three sections as below - initial values, sol
 
 ~~~validation
 
-// Validation goes here
+// Validation(s) go here
 
 ~~~[closing tildes]
 ```
 
 **Starting section:**  
-The first tilde demarcated section `~~~[language]` is used to declare the repl language and include any initial values you want to have visible to the user. Repls currently support two languages, Ruby and Javascript.  
+The first tilde demarcated section `~~~[language]` is used to declare the repl language and should include any initial values you want to have visible to the user. Repls currently support two languages, Ruby and Javascript.  
 
 **Solution section:**  
-The second tilde demarcated section `~~~solution` is for the solution. It contains the content you would like displayed when a user clicks "See Solution".  
+The second tilde demarcated section `~~~solution` is for the solution. It contains the content you'd like displayed when a user clicks the "See Solution" button.  
 
 **Validation section:**  
 The final tilde demarcated section `~~~validation` is for validations.  
-- Javascript validations can be written using the Chai.js assertion library - http://chaijs.com/guide/styles/. The `assert` and `expect` methods are both supported. `should` is NOT supported.
-- Ruby validations have their own custom assertion methods ([see below](#ruby-repl-validations)).
-- Use double quotation marks only. Single quotes will not be parsed correctly.  
-- **Remove any trailing whitespace.** Trailing whitespace will not be parsed correctly.  
+- Javascript validations can be written using the Chai.js assertion library - http://chaijs.com/guide/styles/. The `assert` and `expect` methods are both supported. `should` is NOT supported.  
+- Ruby validations have their own custom assertion methods ([see below](#ruby-repl-validations)).  
+- All code challenges support multiple validations. You can include as many validations as you want, each on its own separate line (with no newlines in between the validations).  
+- **Use double quotation marks only.** Single quotes will not be parsed correctly.
 
 Don't forget to close the repl container with a final `~~~` below your validation section.
 
