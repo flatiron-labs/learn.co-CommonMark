@@ -10,17 +10,22 @@ Directions: Write an array containing three strings, each saying "taylors gonna 
 
 ~~~javascript
 
-// Code your solution here
+// Include any comments or code here that you want displayed to the student.
 
 ~~~solution
 
-['taylors gonna tay', 'taylors gonna tay', 'taylors gonna tay']
+// Solution goes in this block. 
+// Solutions should contain double quotes only. Single quotes will not be rendered correctly.
+["taylors gonna tay", "taylors gonna tay", "taylors gonna tay"]
 
 ~~~validation
 
-// Validations go in this block
-// Validations should contain double quotes only. Single quotes will break the repl.
+// Validation(s) go in this block
 // You can include multiple validations in Javascript repls.
+
+// Validations should contain double quotes only. Single quotes will break the repl.
+// Do not include newlines between your validations.
+// Do not include comments in the validation section. Comments here are purely informational.
 
 assert.equal(response.length, 3);
 expect(response).to.be.a("array");
@@ -41,23 +46,35 @@ Write a method that reverses a string, and call it, passing "12345" as an argume
 
 ~~~ruby
 
-# Code your solution here
+# Include any comments or code you want displayed to the student.
+
+def my_reverse(string)
+  # Code your solution here
+end
 
 ~~~solution
 
-def reverse(string)
+# Solution goes in this block. 
+# Solutions should contain double quotes only. Single quotes will not be rendered correctly.
+
+def my_reverse(string)
   string.reverse
 end
 
-reverse("12345")
+my_reverse("12345")
 
 ~~~validation
 
+# Validation(s) go in this block.
+# You can include multiple validations in Ruby repls.
 # Be sure to use custom Ruby repl syntax, not chai syntax.
+
 # Do not end your Ruby repl validation with a semicolon.
-# Ruby repls currently support single validations only. Do not include more than one validation in your Ruby repl.
+# Do not include newlines between your validations.
+# Do not include comments in the validation section. Comments here are purely informational.
 
 assert_equal(response, "54321")
+assert_length(response, 5)
 
 ~~~
 
