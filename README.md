@@ -146,6 +146,7 @@ assert_equal(response, some_validation)
 assert_equal(response, 1) # response = 1
 assert_equal(response, ["Ruby", "Javascript", "SQL"]) # response = ["Ruby", "Javascript", "SQL"]
 assert_equal(response, {"Jon Snow": {name: "Jon", email: "jon_snow@thewall.we", favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"]}) # response = {"Jon Snow": {name: "Jon", email: "jon_snow@thewall.we", favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"]}
+assert_equal(response.sidekick, "Ace") # response = #<Hero id: 1, name: "Ace", sidekick: "Gary">
 ```
 
 #### assert_type(response, Type)
@@ -155,9 +156,10 @@ Checks [Ruby type](http://ruby-doc.org/core-1.8.7/Object.html#method-i-type) of 
 ```ruby
 # examples
 assert_type(response, Type)
-assert_type(response, String) # response = "Taylor"
-assert_type(response, Array)  # response = [1,2,3]
-assert_type(response, Hash)   # response = {color: "blue"}
+assert_type(response, String)      # response = "Taylor"
+assert_type(response, Array)       # response = [1,2,3]
+assert_type(response, Hash)        # response = { color: "blue" }
+assert_type(response.rank, Fixnum) # response = #<School id: 1, name: "Flatiron School", rank: 1>
 ```
 
 #### assert_length(response, some_length)
@@ -167,8 +169,9 @@ Checks `response.length` against `some_length`, where `some_length` is an intege
 ```ruby
 # examples
 assert_length(response, some_length)
-assert_length(response, 3)  # response = ["one", "two", "three"]
-assert_length(response, 42) # response = "a-string-with-exactly-forty-two-characters"
+assert_length(response, 3)         # response = ["one", "two", "three"]
+assert_length(response, 42)        # response = "a-string-with-exactly-forty-two-characters"
+assert_length(response.albums, 5)  # response = #<Artist id: 1, name: "Taylor Swift", albums: ["1989", "Red", "Speak Now", "Fearless", "Taylor Swift"]>
 ```
 
 #### assert_match(response, some_array)
@@ -178,8 +181,9 @@ Checks `response` and `some_array` are the same length AND all elements of `resp
 ```ruby
 # examples
 assert_match(response, some_array)
-assert_match(response, [1, 2, 3]) # response = [1,3,2]
-assert_match(response, ["Daria", "Jane", "Trent", "Quinn"]) # response = ["Jane", "Trent", "Daria", "Quinn"]
+assert_match(response, [1, 2, 3])                  # response = [1,3,2]
+assert_match(response, ["Daria", "Jane", "Trent"]) # response = ["Jane", "Trent", "Daria"]
+assert_match(response.chars, ["a", "b", "c"])      # response = "abc"
 ```
 
 #### assert_true(response)
@@ -189,9 +193,10 @@ Checks truthiness of `response`. **Note:** use `assert_equal(response, true)` if
 ```ruby
 # examples
 assert_true(response)
-assert_true(response) # response = "Colbert"
-assert_true(response) # response = 1776
-assert_true(response) # response = ["U", "S", "A"]
+assert_true(response)        # response = "Colbert"
+assert_true(response)        # response = 1776
+assert_true(response)        # response = ["U", "S", "A"]
+assert_true(response.empty?) # response = []
 ```
 
 #### assert_false(response)
@@ -201,8 +206,9 @@ Checks falsiness of `response`.
 ```ruby
 # examples
 assert_false(response)
-assert_false(response) # response = nil
-assert_false(response) # response = false
+assert_false(response)      # response = nil
+assert_false(response)      # response = false
+assert_false(response.nil?) # response = "I'm not nil"
 ```
 
 #### assert_contains(response, some_element)
@@ -212,8 +218,9 @@ Checks that `response` contains `some_element` (similar to [Array#include?](http
 ```ruby
 # examples
 assert_contains(response, some_element)
-assert_contains(response, "Taylor") # response = "Taylor Swift"
-assert_contains(response, 1989)     # response = [1989, 2015]
+assert_contains(response, "Taylor")      # response = "Taylor Swift"
+assert_contains(response, "1989")        # response = ["1989", "2015"]
+assert_contains(response.albums, "1989") # response = #<Artist id: 1, name: "Taylor Swift", albums: ["1989", "Red", "Speak Now", "Fearless", "Taylor Swift"]>
 ```
 
 #### assert_output(response, some_validation)
