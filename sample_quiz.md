@@ -2,24 +2,28 @@
 
 ## Readme Title
 
-This is README content that exists outside of the quiz block. Next comes an opening quiz block delimiter.
+This is README content that exists outside of the quiz block. It's a good place to add lesson objectives or instructions. Next comes an opening quiz block delimiter (`???`).
 
 ???
 
-# This is a quiz title.  It is an H1 that succeeds an opening quiz delimiter and a newline.
+# REQUIRED Quiz Title. Add an `h1` element here as your quiz title.
 
-?: What is 1+1?  This is the first question.  A newline is required between this and the title above.
+?: What's this line? It's the first question. A newline is required between this and the title above.
 
-Standard markdown will be parsed as expected between the question, and the answer block.
+Standard markdown will be parsed as expected between the question and the answer block. Here you can add additional instructions, maybe a GIF or two...
 
-__The parends below are reserved characters that indicate radio buttons.__
+__The parends below are reserved characters that indicate radio buttons. Don't include any newlines between your answer choices.__
 
-( ) 3
-(X) 2
-( ) 11
-( ) 1
+( ) First answer choice
+(X) Second answer choice, which also contains a `code snippet`
+( ) Third answer choice, which contains a [link](https://github.com/flatiron-labs/learn.co-CommonMark/edit/master/sample_quiz.md)
+( ) Fourth answer
 
-?: What is 1+1?  This is how you can include code blocks as a choices.
+?: Here's question number 2, with examples of how to include code blocks as a choices. Remember to include a newline between each question and the answer block above it.
+
+Some additional notes: 
+  1. Don't include any newlines between answer choices.
+  2. Don't include newlines between the answer choice parends and the code block.
 
 ( )
 ```ruby
@@ -46,13 +50,18 @@ __The parends below are reserved characters that indicate radio buttons.__
   end
 ```
 
-?: A newline is required between this question, and the answer block above.  Select numbers 3 and 4.
+?: Wanna see an example of a question with multiple correct answers? Check out the syntax below.
 
-#### The square brackets below are reserved characters that indicate checkboxes.
+__The square brackets below are reserved characters that indicate checkboxes. Do not include any newlines between your answer choices.__
 
-[X] 3
-[X] 4
-[ ] 9
-[ ] 7
+[X] Great answer
+[ ] 4
+[ ] `code snippet answer`
+[X]
+```ruby
+def code_block_answer
+  puts 'correct answer'
+end
+```
 
 ???
