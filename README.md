@@ -11,9 +11,32 @@ For sample code challenges, refer to [`sample_repl.md`](https://github.com/flati
 
 All quizzes should be built right inside your README.md files. Quizzes are parsed by our [quiz parser](https://github.com/flatiron-labs/ironboard/blob/1801b23c562cb7bd8ef9e13d6df97f19cac4aecb/lib/inline_quiz_parser.rb) as well as by [Redcarpet](https://github.com/vmg/redcarpet), a markdown parser.
 
-Quiz blocks begin and end with a triple question mark reserved character `???`.
+Quiz blocks begin and end with a triple question mark reserved character `???`. Below is a basic quiz template that summarizes all required quiz elements:
 
-The first h1 inside of the `??? ... ???` block is the title of the quiz. The title must have a newline above and below it.  THIS IS REQUIRED!
+```
+Optional introductory text (i.e. objectives, instructions).
+
+???
+
+# Title
+
+?: Question with one correct answer
+
+( ) Answer 1
+(X) Answer 2
+
+?: Question with multiple correct answers
+
+[X] Correct answer
+[X] Another correct answer
+[ ] Incorrect answer
+
+???
+```
+
+### Quiz Titles
+
+The first `h1` inside of the `??? ... ???` block is the title of the quiz. The title must have a newline above and below it. THIS IS REQUIRED!
 
 Below the title, write any directions for the quiz. The text will be parsed as markdown and can accept codeblocks. Again, leave a newline space above and below the directions text.
 
@@ -59,10 +82,10 @@ Any standard markdown included as part of your question or answer choices will b
 
 (X) yes, you can use any markup, including code blocks.
 ```ruby
-def cool_method
-  "remember: no spaces between code block and answer choices."
-end
-```'
+  def cool_method
+    puts "remember: no spaces between code block and answer choices."
+  end
+`` `
 ( ) no
 ```
 
