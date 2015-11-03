@@ -1,6 +1,6 @@
 # learn.co-CommonMark
 
-Specification and samples for learn.co flavored [CommonMark](https://github.com/jgm/CommonMark)
+Specification and samples for learn.co flavored [CommonMark](https://github.com/jgm/CommonMark).
 
 We use learn.co-CommonMark when writing our [quizzes](#quiz-specs) and [code challenges](#code-challenge-spec).
 
@@ -9,13 +9,11 @@ For sample code challenges, refer to [`sample_repl.md`](https://github.com/flati
 
 ## Quiz Specs
 
-All quizzes should be built right inside your README.md files. Quizzes are parsed by our [quiz parser](https://github.com/flatiron-labs/ironboard/blob/1801b23c562cb7bd8ef9e13d6df97f19cac4aecb/lib/inline_quiz_parser.rb) as well as by [Redcarpet](https://github.com/vmg/redcarpet), a markdown parser.
+All quizzes should be built right inside your README.md files. Quizzes are parsed by our custom [quiz parser](https://github.com/flatiron-labs/ironboard/blob/1801b23c562cb7bd8ef9e13d6df97f19cac4aecb/lib/inline_quiz_parser.rb), which utilizes [Redcarpet](https://github.com/vmg/redcarpet), a markdown parser. Quiz blocks begin and end with a triple question mark reserved character `???`.
 
-Quiz blocks begin and end with a triple question mark reserved character `???`. Below is a basic quiz template that summarizes all required quiz elements:
+Below is a basic quiz template that summarizes all required quiz elements:
 
 ```
-Optional introductory text (i.e. objectives, instructions).
-
 ???
 
 # Title
@@ -36,7 +34,7 @@ Optional introductory text (i.e. objectives, instructions).
 
 ### Quiz Titles
 
-The first `h1` inside of the `??? ... ???` block is the title of the quiz. The title must have a newline above and below it. THIS IS REQUIRED!
+The first `h1` inside of the `??? ... ???` block is the title of the quiz. The title must have a newline above and below it. **This `h1` title is required;** the quiz will not render properly without it.
 
 Below the title, write any directions for the quiz. The text will be parsed as markdown and can accept codeblocks. Again, leave a newline space above and below the directions text.
 
@@ -114,17 +112,15 @@ For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs
 
 Like quizzes, code challenges should be built right inside your README.md files. Code challenges are also referred to as "repls", and currently support two languages: Javascript and Ruby. Javascript repls are evaluated using the [Chai assertion library](http://chaijs.com/), and Ruby repls are evaluated using our own [custom testing library](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/ruby_repl_testing_library.rb), which we then pass to the [repl.it API](https://github.com/replit/ReplitClient.js) along with the student's response and the instructor's validation(s) for evaluation.
 
-Code challenge blocks begin with the triple-percentage-sign reserved character `%%%`.
+Code challenge blocks begin and end with the triple-percentage-sign reserved character `%%%`.
 
-The first h1 inside of `%%%...%%%` is the title of the challenge.
-- The title must have a newline above and below it.
-- **This is required.**
-
-Below the title, write any directions for the challenge. The text will be parsed as markdown and can accept codeblocks. Again, leave a newline space above and below the directions text.
-
-The repl container is divided into three sections as below - initial values, solution, and validation.
+The repl container is divided into four sections as below - title, initial values, solution, and validation.
 
 ```
+%%%
+
+# Title
+
 ~~~language
 
 // Initial values for the repl, visible to the user
@@ -138,9 +134,16 @@ The repl container is divided into three sections as below - initial values, sol
 // Validation(s) go here
 
 ~~~[closing tildes]
+
+%%%
 ```
 
-**Starting section:**  
+**Title section:**  
+The first `h1` inside of `%%%...%%%` is the title of the challenge. The title must have a newline above and below it. This `h1` title element is required; the challenge will not render correctly without it.
+
+Below the title, write any directions for the challenge. The text will be parsed as markdown and can accept codeblocks. Again, leave a newline space above and below the directions text.
+
+**Initial values section:**  
 The first tilde demarcated section `~~~[language]` is used to declare the repl language and should include any initial values you want to have visible to the user. Repls currently support two languages, Ruby and Javascript.  
 
 **Solution section:**  
