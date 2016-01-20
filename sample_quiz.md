@@ -8,7 +8,7 @@ This is README content that exists outside of the quiz block. It's a good place 
 
 # REQUIRED Quiz Title. Add an `h1` element here as your quiz title.
 
-?: What's this line? It's the first question. A newline is required between this and the title above.
+?: What's this line? It's the first question. A newline is required above and below this line.
 
 Standard markdown will be parsed as expected between the question and the answer block. Here you can add additional instructions, maybe a GIF or two...
 
@@ -19,7 +19,7 @@ __The parends below are reserved characters that indicate radio buttons. Don't i
 ( ) Third answer choice, which contains a [link](https://github.com/flatiron-labs/learn.co-CommonMark/edit/master/sample_quiz.md)
 ( ) Fourth answer
 
-?: Here's question number 2, with examples of how to include code blocks as a choices. Remember to include a newline between each question and the answer block above it.
+?: Here's question number 2, with examples of how to include code blocks as a choices. Remember to include a newline above and below this line.
 
 Some additional notes: 
   1. Don't include any newlines between answer choices.
