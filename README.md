@@ -40,7 +40,7 @@ Below the title, write any directions for the quiz. The text will be parsed as m
 
 ### Question Blocks
 
-Questions are delineated by `?: ` followed by the question text.
+Questions are delineated by `?: ` followed by the question text. **Include a newline between the question and the first answer choice.**
 
 ```
 ?: Is this a question?
