@@ -1,4 +1,3 @@
-```markdown
 # Sample Quiz
 
 ## Readme Title
@@ -66,4 +65,3 @@ end
 ```
 
 ???
-```
