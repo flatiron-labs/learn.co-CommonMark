@@ -109,7 +109,7 @@ This text down here is going to to break the quiz.
 ( ) womp womp
 ```
 
-For sample quizzes, refer to [`demo_quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/quizzes).
+For sample quizzes, refer to [`samples/quizzes directory`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/quizzes).
 
 ## Code Challenge Spec
 
@@ -264,4 +264,4 @@ assert_output(response, "very creative example\n") # response = `puts "very crea
 assert_output(response, "multi\nline\nstring\n")   # response = `puts "multi"; puts "line"; puts "string"`
 ```
 
-For sample code challenges, refer to [`demo_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/repls).
+For sample code challenges, refer to [`samples/repls directory`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/repls).
