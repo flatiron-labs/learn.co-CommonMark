@@ -4,12 +4,15 @@ Specification and samples for learn.co flavored [CommonMark](https://github.com/
 
 We use learn.co-CommonMark when writing our [quizzes](#quiz-specs) and [code challenges](#code-challenge-spec).
 
-For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_quiz.md).  
-For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
+For quiz template, refer to [`quiz_template.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/templates/quiz_template.md).  
+For code challenge templates, refer to [`repl_template_ruby.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/templates/repl_template_ruby.md) and [`repl_template_js.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/templates/repl_template_js.md).
+
+For sample quizzes, refer to [`samples/quizzes directory`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/quizzes).  
+For sample code challenges, refer to [`samples/repls directory`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/repls).
 
 ## Quiz Specs
 
-All quizzes should be built right inside your README.md files. Quizzes are parsed by our custom [quiz parser](https://github.com/flatiron-labs/ironboard/blob/1801b23c562cb7bd8ef9e13d6df97f19cac4aecb/lib/inline_quiz_parser.rb), which utilizes [Redcarpet](https://github.com/vmg/redcarpet), a markdown parser. Quiz blocks begin and end with a triple question mark reserved character `???`.
+All quizzes should be built right inside your lesson README.md files. Quizzes are parsed by our custom [quiz parser](https://github.com/flatiron-labs/ironboard/blob/1801b23c562cb7bd8ef9e13d6df97f19cac4aecb/lib/inline_quiz_parser.rb), which utilizes [Redcarpet](https://github.com/vmg/redcarpet), a markdown parser. Quiz blocks begin and end with a triple question mark reserved character `???`.
 
 Below is a basic quiz template that summarizes all required quiz elements:
 
@@ -106,7 +109,7 @@ This text down here is going to to break the quiz.
 ( ) womp womp
 ```
 
-For sample quizzes, refer to [`sample_quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_quiz.md).  
+For sample quizzes, refer to [`demo_quiz.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/quizzes).
 
 ## Code Challenge Spec
 
@@ -261,4 +264,4 @@ assert_output(response, "very creative example\n") # response = `puts "very crea
 assert_output(response, "multi\nline\nstring\n")   # response = `puts "multi"; puts "line"; puts "string"`
 ```
 
-For sample code challenges, refer to [`sample_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/sample_repl.md).
+For sample code challenges, refer to [`demo_repl.md`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/repls).

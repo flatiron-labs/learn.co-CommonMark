@@ -4,7 +4,7 @@ Below are some inspiring example code challenges you can use as a reference when
 
 %%%
 
-### Javascript Repl: Example #1
+# Javascript Repl: Example #1
 
 Directions: Write an array containing three strings, each saying "taylors gonna tay".
 
@@ -40,7 +40,7 @@ and so on and so on
 
 %%%
 
-### Ruby Repl: Example #1
+# Ruby Repl: Example #1
 
 Write a method that reverses a string, and call it, passing "12345" as an argument.
 
@@ -84,7 +84,7 @@ assert_length(response, 5)
 
 %%%
 
-### Ruby Repl: Example #2
+# Ruby Repl: Example #2
 
 Define a class, Artist, that instantiates with a name, genre, and albums. The class should have `attr_accessor`s for name, genre, and albums. The initialize method should use keyword arguments for those attributes. Then instantiate a new instance of the Artist class using mass assignment.
 
