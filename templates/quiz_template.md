@@ -21,6 +21,8 @@ Do not include newlines between answer choices.
 
 Add question-specific directions / instructions here. You can include any valid markdown elements, including code blocks, links, and images.
 
+You don't need to number your questions. This will be handled for you when the lesson is rendered on Learn.
+
 Single answer syntax rules:
   - mark correct answers with `(X)` or `(x)`
   - use `parentheses + whitespace + parentheses` - `( )` - for incorrect answers
