@@ -52,6 +52,8 @@ Questions are delineated by `?: ` followed by the question text. **Include a new
 ( ) no
 ```
 
+You don't need to number your questions. This will be handled for you by our CSS once the lesson is rendered on Learn.
+
 ### Answer Choices
 
 Questions with one answer have `( )` to indicate the choices. These will be parsed into radio buttons. 
