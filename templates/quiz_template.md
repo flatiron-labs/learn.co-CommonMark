@@ -36,6 +36,7 @@ Single answer syntax rules:
 Multiple answer syntax rules:
   - mark correct answers with `[X]` or `[x]`
   - use `bracket + whitespace + bracket` - `[ ]` - for incorrect answers
+  - Use line break between each answer
 
 [X] Correct answer
 [X] Another correct answer
