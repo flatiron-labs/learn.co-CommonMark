@@ -14,8 +14,9 @@ Newlines are required:
   1. above and below quiz title
   2. above and below any instruction block
   3. above and below each question
+  4. after each answer in a *multiple select* question
 
-Do not include newlines between answer choices.
+Do not include newlines between answer choices, unless for multiple select questions.
 
 ?: First question (multiple choice - one answer)
 
