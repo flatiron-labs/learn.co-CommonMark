@@ -59,7 +59,8 @@ Questions with multiple answers have `[ ]` to indicate the choices. These will b
 
 Answers are specified inline using an upcase X character inside parentheses: `(X)`.
 
-**Do not include any newlines between your answer choices.**
+**Do NOT include any newlines between single select answer choices.**
+**DO include a newline between multiple select answer choices.**
 
 ```
 ?: Can I select only one answer for this question?
