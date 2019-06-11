@@ -89,6 +89,10 @@ Any standard markdown included as part of your question or answer choices will b
 ( ) no
 ```
 
+* Use `single ticks` for a _single_ line of code in an answer choice
+* Use the `triple tick (lang)... code block ... triple tick` for _multiple_ lines of code in an answer as seen above.
+* When there’s a rendering bug (such as with the use of a character like `\`), work around this issue by using HTML `<code>\</code>` tags.
+
 **Note:** The final answer choice delimits the end of a question. The parser expects the next character to either be the end of the quiz block `???` or a new question `?:`, so do not include any additional material after your answer block. See the example below for further clarification.
 
 ```
