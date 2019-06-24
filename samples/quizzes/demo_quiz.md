@@ -52,7 +52,7 @@ Some additional notes:
 
 ?: Wanna see an example of a question with multiple correct answers? Check out the syntax below.
 
-__The square brackets below are reserved characters that indicate checkboxes. Do not include any newlines between your answer choices.__
+__The square brackets below are reserved characters that indicate checkboxes. Include a new line between multiple select answer choices.__
 
 [X] Great answer
 [ ] 4
