@@ -109,4 +109,22 @@ This text down here is going to to break the quiz.
 ( ) womp womp
 ```
 
+## Beware `X`
+
+As you noticed, `X` is significant in CommonMark. Consequently that character must be used very carefully:
+
+don't use x or X as variables, don't attempt to invoke x or X in a function, and don't use it in brackets unless its a string:
+
+**OK**:
+
+'xylophone's are super'
+'an example of a bad variable is x'
+'["x"]'
+
+**NO**:
+
+'x = encodeURIComponent("?name=nancy"); submit(x)'
+'an example of an array is: [X]'
+
+
 For sample quizzes, refer to [`samples/quizzes directory`](https://github.com/flatiron-labs/learn.co-CommonMark/blob/master/samples/quizzes).
